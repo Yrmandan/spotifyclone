@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let div= document.createElement('div')
+        div.innerHTML="Hello iam inner HTML"
+        document.body.append(div)
+        document.querySelector("div").style.color = "blue"
+        
+    </script>
+</body> 
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localstorage</title>
+</head>
+<body>
+    <button class="button">Remove</button>
+</body>
+<script>
+    let btn= document.querySelector(".button").addEventListener("click", (e) => {
+        localStorage.removeItem("name")
+        location.reload()
+    })
+    if(localStorage.getItem("name")){
+        let a = localStorage.getItem("name")
+        document.body.append(a)
+    }
+    else{
+        let a = prompt("Enter your name ")
+        localStorage.setItem("name",a)
+        document.body.append(a)
+
+    }
+</script>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="email" id="email"> 
+    <button class="btn">Submit</button>
+    <script>
+        let btn = document.querySelector(".btn")
+        btn.addEventListener("click", (e) => {
+           localStorage.setItem("email", document.querySelector("#email").value) 
+           document.querySelector('#email').value=""
+        })
+    </script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+₩₩
+</body>
+</html> -->
